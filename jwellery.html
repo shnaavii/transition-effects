@@ -1,323 +1,317 @@
-<html>
-	<head>
-		<title> transition </title>
-		<style>
-  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Great+Vibes&family=Playfair+Display&display=swap');
-
-            *{
-			margin:0;
-			padding:0;
-			}
-            .bg{
-			height:823px;
-			width:100%;
-			background-color:#DAE2DA;
-			}			
-			.one{
-			height:70px;
-			width:550px;
-			background-color:white;
-			transition: width 0.5s , height 0.5s;
+	<html>
+		<head>
+			<title> transition </title>
+			<style>
+	                    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Great+Vibes&family=Playfair+Display&display=swap');
+	
+		            *{
+					margin:0;
+					padding:0;
+					}
+		            .bg{
+					height:823px;
+					width:100%;
+					background-color:#DAE2DA;
+					}			
+					.one{
+					height:70px;
+					width:550px;
+					background-color:white;
+					transition: width 0.5s , height 0.5s;
+				
+					}
+					.one:hover{
+						width:700px;
+						height:90px;
+					}
+					.one h2{
+						font-size:28px;
+						text-align:center;
+						padding-top:3%;
+						color:#357332;
+						transition-timing-function: ease-in;
+						transition-delay: 1s;
+						transition: width 1s, font-size 1s, transform 1.5s;
+						font-family: 'Playfair Display', serif;
+	          				  text-shadow: #e0e0e0 1px 1px 0;
+				
+					}
+					.one:hover h2{
+						display:block;
+						font-size:34px;
+					}
+					.jw1{
+						height:376.7px;
+						width:376.7px;
+						background-color:#357332;
+						float:left;
+						margin-right:0.2%;
+						margin-top:0.2%;
+						position:relative;
+					}
+					.jw2{
+						height:376.7px;
+						width:376.7px;
+						background-color:#DAE7DA;
+						float:left;
+						margin-right:0.2%;
+						position:relative;
+					}
+					.inner{
+						height:300px;
+						width:200px;
+						background-color:#357332;
+						float:right;
+						position:absolute;
+						top:30px;
+						right:0px;
+					}
+					.heading{
+						 color:white;
+						 font-size:35px;
+						 margin-left:5%;
+						 text-shadow: 5px 2px 5px black;
+						transition-timing-function: ease-in;
+						transition:margin-top 1s , transform 1s;
+						margin-top:2%;
+						margin-bottom:3%;
+						cursor:pointer;
+						font-family: 'Cinzel', serif;
+	
+					}
+					.heading:hover{
+						margin-top:7%;
+					}
+					.jw1 > img{
+						margin-left:10%;
+						margin-top:3%;
+						transition-timing-function: ease-in;
+						transition: height 1s, transform 1s;
+					}
+					.jw1 > img:hover{
+						 height:350px; 
+					}
+					.jw2 h3{
+						writing-mode:vertical-rl;
+						padding-top:3%;
+						color:#357332;
+						text-shadow: inset 3px 2px 2px rgba(93,96,97,0.98);
+						transition-timing-function: ease-in;
+						transition:font-size 1s , transform 2s;
+						font-size:42px;
+						margin-left:7%;
+						margin-top:3%;
+						cursor:pointer;
+						font-family: 'Cinzel', serif;
+					        background: #666666;
+					        -webkit-background-clip: text;
+					        -moz-background-clip: text;
+					        background-clip: text;
+					        text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+					}
+					.jw2 h3:hover{
+						font-size:52px;
+					}
+					.pic img{
+						height:270px;
+						margin-left:4%;
+					}
+					.inner img{
+						position:relative;
+						right:35px;
+						bottom:19px;
+						transition-timing-function: ease-in;
+						transition:bottom 1.5s , right 1s , transform 2s;
+					}
+					.inner img:hover{
+						bottom:0px;
+						right:10px;
+					}
+					.inner-2{
+						height:290px;
+						width:290px;
+						float:right;
+						position:absolute;
+						bottom:29px;
+						right:45px;
+					}
+					.inner-2 img{
+						margin-top:4%;
+						height:250px;
+						transition-timing-function: ease-in-out;
+						margin-left:3%;
+						position:relative;
+						box-shadow:none;
+						transition:box-shadow 1s , transform 1.5s;
+						transition-timing-function:ease-in-out;
+					}
+					.inner-2 img:hover{
+	          				  box-shadow: 5px 5px 18px 6px rgba(0,0,0,0.92);
+					}
+					.inner-2 p{
+						font-size:43px;
+						background: #666666;
+					        -webkit-background-clip: text;
+						-moz-background-clip: text;
+					        background-clip: text;
+						text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+						color:#357332;
+						text-align:center;
+						Display:block;
+						height:50px;
+						width:290px;
+						outline:none;
+						transition-timing-function:ease-in-out;
+						transition: outline 1s , transform 1.5s;
+						}
+						.inner-2 p:hover{
+							outline:6px solid #357332;
+							outline-style:ridge;
+						}
+						.inner-3{
+							height:200px;
+							width:280px;
+							background-color:#E6EEE6;
+							float:right;
+							position:absolute;
+				        		 bottom:39px;
+							right:35px;
+						}
+						.inner-3 img{
+							position:relative;
+							right:21px;
+							bottom:27px;
+							transition-timing-function: ease-in;
+							transition:bottom 1.5s , right 2s , transform 1.5s;
+						}
+						.inner-3 img:hover{
+							bottom:0px;
+							right:0px;
+						}
+						.heading-1{
+							 color:white;
+							 font-size:36px;
+							 font-family: 'Cinzel', serif;
+			             			 text-shadow: #e0e0e0 1px 1px 0;
+							 margin-left:5%;
+							 margin-top:4%;
+							 transition: text-shadow 1s , transform  1s;
+						}
+						.heading-1:hover{
+							color: #FFFFFF;
+				           		 text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+						}
+			            		.two p{
+							 font-size:37px;
+							 color:white;
+							 text-align:center;
+							 margin-top:4%;
+							 font-family: 'Cinzel', serif;
+				            		 text-shadow: #e0e0e0 1px 1px 0;
+						}
+						.two img{
+							height:300px;
+							margin-left:12%;
+							transition:height 1s ,margin-left 2s ,transform 3s;
+						}
+						.two img:hover{
+							height:365px;
+							margin-left:1%;
+						}
+						.pic-1 img{
+							margin-top:7%;
+							height:300px;
+							margin-left:5%;
+							outline:2px solid #CEDACE;
+							transition-timing-function:ease-in;
+							transition:outline 1s;
+						}
+						.pic-1 img:hover{
+							outline:10px  solid #CEDACE;
+							outline-style:inset;
+						}
+						.heading-2{
+							color:white;
+			           			 font-size:40px;
+							float:right;
+							font-family: 'Cinzel', serif;
+			               			margin-right:3%;
+							margin-top:6%;
+							transition: letter-spacing 1s , transform 1.5s;
+							transition-timing-function:linear;
+							writing-mode:vertical-lr;
+					           	letter-spacing: .1em;
+					            	text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+						}
+						.heading-2:hover{
+							letter-spacing: .3em;
+						}
+						.pic-3 img{
+							height:300px;
+							position:absolute;
+							bottom:60px;
+							right:120px;
+							transition: right 1s , bottom 3.5s,transform 2s ;
+							transition-timing-function:ease-in-out;
+						}
+						.pic-3 img:hover{
+							position:absolute;
+							right:0px;
+							bottom:0px;
+						}
+			</style>	
+		</head>
+		<body>
+		<div class="bg">
+			<div class="one">
+			 	<h2>Collection of tradional jwelleries</h2>
+			</div>
+			<div class="jw1">
+				<img src="Bridal neck wear.jpg" height="330">
+			</div>
+			<div class="jw1">
+				<p class="heading">Wedding Whimses</p>
+				<div class="pic"><img src="Jewelryyy.png"> </div>
+			</div>
+			<div class="jw2">
+				<h3>Bride's Pride</h3>
+				<div class="inner">
+				<img src="Jewelry.jpg" height="280">
+				</div>
+			</div>
+			<div class="jw1">
+			        <div class="two">
+					<img src="Designer Artificial.jpg">
+					<p>Golden Age</p>
+			        </div>
+			</div>
+			<div class="jw2">
+				<div class="inner-2">
+				<p>Fine Jewels</p>
+				<img src="jw1 (1).jpg">
+				
+				</div>
+			</div>
+			<div class="jw1">
+				<p class="heading-1">Better than Ever</p>
+				<div class="inner-3">
+				
+				<img src="jw.jpg" height="200">
+				</div>
+			</div>
+			<div class="jw1">
+				<div class="pic-1">
+				<p class="heading-2">Heavenly</p>
+				<img src="jw1 (3).jpg">
+		         
+				</div>
+			</div>
+			<div class="jw2">
+				<h3>Masterpiece</h3>
+				<div class="pic-3"><img src="jw1 (2).jpg"> </div>
+			</div>
+		</div>
+	
 			
-			}
-			.one:hover{
-			width:700px;
-			height:90px;
-			}
-			.one h2{
-			font-size:28px;
-			text-align:center;
-			padding-top:3%;
-			color:#357332;
-			transition-timing-function: ease-in;
-			transition-delay: 1s;
-			transition: width 1s, font-size 1s, transform 1.5s;
-			font-family: 'Playfair Display', serif;
-            text-shadow: #e0e0e0 1px 1px 0;
-			
-			}
-			.one:hover h2{
-			display:block;
-			font-size:34px;
-			}
-			.jw1{
-			height:376.7px;
-			width:376.7px;
-			background-color:#357332;
-			float:left;
-			margin-right:0.2%;
-			margin-top:0.2%;
-			position:relative;
-			}
-			.jw2{
-			height:376.7px;
-			width:376.7px;
-			background-color:#DAE7DA;
-			float:left;
-			margin-right:0.2%;
-			position:relative;
-			}
-			.inner{
-			height:300px;
-			width:200px;
-			background-color:#357332;
-			float:right;
-			position:absolute;
-			top:30px;
-			right:0px;
-			}
-			.heading{
-			 color:white;
-			 font-size:35px;
-			 margin-left:5%;
-			 text-shadow: 5px 2px 5px black;
-			transition-timing-function: ease-in;
-			transition:margin-top 1s , transform 1s;
-			margin-top:2%;
-			margin-bottom:3%;
-			cursor:pointer;
-			font-family: 'Cinzel', serif;
-
-			}
-			.heading:hover{
-			margin-top:7%;
-			}
-			.jw1 > img{
-			margin-left:10%;
-			margin-top:3%;
-			transition-timing-function: ease-in;
-			transition: height 1s, transform 1s;
-			}
-			.jw1 > img:hover{
-			 height:350px;
-			 
-			}
-			.jw2 h3{
-			writing-mode:vertical-rl;
-			padding-top:3%;
-			color:#357332;
-			text-shadow: inset 3px 2px 2px rgba(93,96,97,0.98);
-			transition-timing-function: ease-in;
-			transition:font-size 1s , transform 2s;
-			font-size:42px;
-			margin-left:7%;
-			margin-top:3%;
-			cursor:pointer;
-			font-family: 'Cinzel', serif;
-            background: #666666;
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
-
-			}
-			.jw2 h3:hover{
-			font-size:52px;
-			}
-			.pic img{
-			height:270px;
-			margin-left:4%;
-			}
-			.inner img{
-			position:relative;
-			right:35px;
-			bottom:19px;
-			transition-timing-function: ease-in;
-			transition:bottom 1.5s , right 1s , transform 2s;
-			}
-			.inner img:hover{
-			bottom:0px;
-			right:10px;
-			}
-			.inner-2{
-			height:290px;
-			width:290px;
-			float:right;
-			position:absolute;
-			bottom:29px;
-			right:45px;
-			}
-			.inner-2 img{
-			margin-top:4%;
-			height:250px;
-			transition-timing-function: ease-in-out;
-			margin-left:3%;
-			position:relative;
-			box-shadow:none;
-			transition:box-shadow 1s , transform 1.5s;
-			transition-timing-function:ease-in-out;
-			}
-			.inner-2 img:hover{
-            box-shadow: 5px 5px 18px 6px rgba(0,0,0,0.92);
-			}
-			.inner-2 p{
-			font-size:43px;
-			background: #666666;
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
-			color:#357332;
-			text-align:center;
-			Display:block;
-			height:50px;
-			width:290px;
-			outline:none;
-			transition-timing-function:ease-in-out;
-			transition: outline 1s , transform 1.5s;
-			}
-			.inner-2 p:hover{
-			outline:6px solid #357332;
-			outline-style:ridge;
-			}
-			.inner-3{
-			height:200px;
-			width:280px;
-			background-color:#E6EEE6;
-			float:right;
-			position:absolute;
-	         bottom:39px;
-			right:35px;
-			}
-			.inner-3 img{
-			position:relative;
-			right:21px;
-			bottom:27px;
-			transition-timing-function: ease-in;
-			transition:bottom 1.5s , right 2s , transform 1.5s;
-			}
-			.inner-3 img:hover{
-			bottom:0px;
-			right:0px;
-			}
-			.heading-1{
-			 color:white;
-			 font-size:36px;
-			 font-family: 'Cinzel', serif;
-             text-shadow: #e0e0e0 1px 1px 0;
-			 margin-left:5%;
-			 margin-top:4%;
-			 transition: text-shadow 1s , transform  1s;
-			}
-			.heading-1:hover{
-			color: #FFFFFF;
-            text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
-			}
-            .two p{
-			 font-size:37px;
-			 color:white;
-			 text-align:center;
-			 margin-top:4%;
-			 font-family: 'Cinzel', serif;
-             text-shadow: #e0e0e0 1px 1px 0;
-			}
-			.two img{
-			height:300px;
-			margin-left:12%;
-			transition:height 1s ,margin-left 2s ,transform 3s;
-			}
-			.two img:hover{
-			height:365px;
-			margin-left:1%;
-			}
-			.pic-1 img{
-			margin-top:7%;
-			height:300px;
-			margin-left:5%;
-			outline:2px solid #CEDACE;
-			transition-timing-function:ease-in;
-			transition:outline 1s;
-			}
-			.pic-1 img:hover{
-			outline:10px  solid #CEDACE;
-			outline-style:inset;
-			}
-			.heading-2{
-			color:white;
-            font-size:40px;
-			float:right;
-			font-family: 'Cinzel', serif;
-            margin-right:3%;
-			margin-top:6%;
-			transition: letter-spacing 1s , transform 1.5s;
-			transition-timing-function:linear;
-			writing-mode:vertical-lr;
-            letter-spacing: .1em;
-            text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
-			}
-			.heading-2:hover{
-			letter-spacing: .3em;
-			}
-			.pic-3 img{
-			height:300px;
-			position:absolute;
-			bottom:60px;
-			right:120px;
-			transition: right 1s , bottom 3.5s,transform 2s ;
-			transition-timing-function:ease-in-out;
-			}
-			.pic-3 img:hover{
-			position:absolute;
-			right:0px;
-			bottom:0px;
-		
-			
-			}
-		</style>	
-	</head>
-	<body>
-	    <div class="bg">
-		<div class="one">
-		 <h2>Collection of tradional jwelleries</h2>
-		</div>
-		<div class="jw1">
-		<img src="Bridal neck wear.jpg" height="330">
-		</div>
-		<div class="jw1">
-		<p class="heading">Wedding Whimses</p>
-		<div class="pic"><img src="Jewelryyy.png"> </div>
-		</div>
-		<div class="jw2">
-		<h3>Bride's Pride</h3>
-		<div class="inner">
-		<img src="Jewelry.jpg" height="280">
-		</div>
-		</div>
-		<div class="jw1">
-        <div class="two">
-		<img src="Designer Artificial.jpg">
-		<p>Golden Age</p>
-        </div>
-		</div>
-		<div class="jw2">
-		<div class="inner-2">
-		<p>Fine Jewels</p>
-		<img src="jw1 (1).jpg">
-		
-		</div>
-		</div>
-		<div class="jw1">
-		<p class="heading-1">Better than Ever</p>
-		<div class="inner-3">
-		
-		<img src="jw.jpg" height="200">
-		</div>
-		
-		</div>
-		<div class="jw1">
-		<div class="pic-1">
-		<p class="heading-2">Heavenly</p>
-		<img src="jw1 (3).jpg">
-         
-		</div>
-		
-		</div>
-		<div class="jw2">
-		<h3>Masterpiece</h3>
-		<div class="pic-3"><img src="jw1 (2).jpg"> </div>
-		</div>
-		</div>
-
-		
 	</body>
 </html>
